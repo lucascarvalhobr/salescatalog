@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SalesCatalog.Application\SalesCatalog.Application.csproj" />
+    <ProjectReference Include="..\SalesCatalog.Domain\SalesCatalog.Domain.csproj" />
+    <ProjectReference Include="..\SalesCatalog.Infra.Data\SalesCatalog.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
