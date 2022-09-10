@@ -1,6 +1,6 @@
 # Sales Catalog
 
-This project is a sample CRUD for  products. I built this API for studying purposes, for testing artchitectures models.
+This project is a sample CRUD for  products. I built this API for studying purposes and for testing artchitectures models and concepts about CQRS.
 
 The stack used is:
 
@@ -12,7 +12,7 @@ The stack used is:
 - EntityFrameworkCore
 - AutoMapper
 
-The API's architecture uses concerns about:
+The API's architecture uses concepts about:
 
 - Clean Architecture
 - CQRS
@@ -20,6 +20,8 @@ The API's architecture uses concerns about:
 I followed the Clean Architecture from 'Uncle Bob':
 
 ![image](https://user-images.githubusercontent.com/79495407/189498523-e6f3139e-f639-4129-a5fc-00ea35463534.png)
+
+I splitted my solution in several different projects, as follow:
 
 ![image](https://user-images.githubusercontent.com/79495407/189498629-5ef7aa88-bb76-4f80-a90b-1a3e9cf8b528.png)
 
