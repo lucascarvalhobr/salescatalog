@@ -18,12 +18,14 @@ namespace SalesCatalog.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApiConfiguration(Configuration);
+            services.AddSwaggerConfiguration();
             services.RegisterServices();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseApiConfiguration(env);
+            app.UseSwaggerConfiguration();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SalesCatalog.Application.DTOs
 {
-    public class CatalogDTO
+    public class ProductDTO
     {
         public Guid Id { get; set; }
 

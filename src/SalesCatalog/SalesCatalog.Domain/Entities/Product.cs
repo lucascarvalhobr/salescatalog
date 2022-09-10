@@ -4,25 +4,25 @@ using System;
 
 namespace SalesCatalog.Domain.Entities
 {
-    public sealed class Catalog : Entity
+    public sealed class Product : Entity
     {
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
-        public string Description { get; private set; }
+        public string Description { get; set; }
 
-        public decimal Value { get; private set; }
+        public decimal Value { get; set; }
 
-        public int QtyInStock { get; private set; }
+        public int QtyInStock { get; set; }
 
-        public string Image { get; private set; }
+        public string Image { get; set; }
 
         public bool Active { get; set; }
 
-        public Guid CategoryId { get; private set; }
+        public Guid CategoryId { get; set; }
 
-        public Category Category { get; private set; }
+        public Category Category { get; set; }
 
-        public Catalog(string name, string description, decimal price, int stock, string image)
+        public Product(string name, string description, decimal price, int stock, string image)
         {
             Id = Guid.NewGuid();
             Name = name;
@@ -35,9 +35,9 @@ namespace SalesCatalog.Domain.Entities
             IsValid();
         }
 
-        private Catalog() { }
+        Product() { }
 
-        internal Catalog Update(string name, string description, decimal price, int stock, string image, Guid categoryId)
+        public Product Update(string name, string description, decimal price, int stock, string image, Guid categoryId)
         {
             Name = name;
             Description = description;

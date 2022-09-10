@@ -4,9 +4,9 @@ using SalesCatalog.Domain.Entities;
 
 namespace SalesCatalog.Infra.Data.EntityFramework.EntitiesConfiguration
 {
-    public class CatalogConfiguration : IEntityTypeConfiguration<Catalog>
+    public class CatalogConfiguration : IEntityTypeConfiguration<Product>
     {
-        public void Configure(EntityTypeBuilder<Catalog> builder)
+        public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.ToTable("TbCatalog");
             builder.HasKey(t => t.Id);

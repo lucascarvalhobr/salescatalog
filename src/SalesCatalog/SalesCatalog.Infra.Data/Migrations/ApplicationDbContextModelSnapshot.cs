@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using SalesCatalog.Application.Interfaces;
 using SalesCatalog.Infra.Data.EntityFramework.Context;
 
 namespace SalesCatalog.Infra.Data.Migrations

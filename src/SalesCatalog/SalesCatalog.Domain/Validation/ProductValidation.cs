@@ -3,7 +3,7 @@ using SalesCatalog.Domain.Entities;
 
 namespace SalesCatalog.Domain.Validation
 {
-    public class ProductValidation : AbstractValidator<Catalog>
+    public class ProductValidation : AbstractValidator<Product>
     {
         public ProductValidation()
         {
