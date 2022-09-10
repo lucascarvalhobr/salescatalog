@@ -1,4 +1,5 @@
 # Sales Catalog
+Sample API for studying Clean Architecture and CQRS
 
 This project is a sample CRUD for  products. I built this API for studying purposes and for testing artchitectures models and concepts about CQRS.
 
