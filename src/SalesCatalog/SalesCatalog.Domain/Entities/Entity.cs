@@ -7,6 +7,8 @@ namespace SalesCatalog.Domain.Entities
     {
         public Guid Id { get; protected set; }
 
+        public DateTime RegisterDate { get; set; }
+
         public ValidationResult State { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace SalesCatalog.Domain.Entities
     {
         public string Name { get; private set; }
 
-        public ICollection<Product> Products { get; private set; }
+        public ICollection<Catalog> Products { get; private set; }
 
         public Category(string name)
         {

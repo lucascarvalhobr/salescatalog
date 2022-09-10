@@ -15,4 +15,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SalesCatalog.Infra.IoC\SalesCatalog.Infra.IoC.csproj" />
+  </ItemGroup>
+
 </Project>

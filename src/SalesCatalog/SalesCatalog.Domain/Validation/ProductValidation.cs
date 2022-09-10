@@ -3,7 +3,7 @@ using SalesCatalog.Domain.Entities;
 
 namespace SalesCatalog.Domain.Validation
 {
-    public class ProductValidation : AbstractValidator<Product>
+    public class ProductValidation : AbstractValidator<Catalog>
     {
         public ProductValidation()
         {
@@ -19,11 +19,11 @@ namespace SalesCatalog.Domain.Validation
                 .Length(0, 250)
                 .WithMessage("Product image must be until 250 characters");
 
-            RuleFor(c => c.Price)
+            RuleFor(c => c.Value)
                 .GreaterThan(0)
                 .WithMessage("Product price is required and must be greater than 0");
 
-            RuleFor(c => c.Stock)
+            RuleFor(c => c.QtyInStock)
                 .GreaterThanOrEqualTo(0)
                 .WithMessage("Product stock must be greater or equal to 0");
         }
